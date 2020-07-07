@@ -1,0 +1,1778 @@
+[
+  {
+    "id": "14f8b8a9.acfeb7",
+    "type": "tab",
+    "label": "GC Telemetry",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "f78c0daf.a712e",
+    "type": "tab",
+    "label": "GPS",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "96cfd5d1.3c58a8",
+    "type": "tab",
+    "label": "REST",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "489314f8.eaa50c",
+    "type": "subflow",
+    "name": "Environment",
+    "info": "",
+    "category": "",
+    "in": [],
+    "out": [],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "be770b5e.a11918",
+    "type": "subflow",
+    "name": "Thrusters",
+    "info": "",
+    "category": "",
+    "in": [],
+    "out": [],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "cc9b593f.564518",
+    "type": "subflow",
+    "name": "OFCU",
+    "info": "",
+    "category": "",
+    "in": [],
+    "out": [],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "ba87ef2f.f3503",
+    "type": "subflow",
+    "name": "Motion",
+    "info": "",
+    "category": "",
+    "in": [],
+    "out": [],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "3c88831a.9edc2c",
+    "type": "subflow",
+    "name": "Tracker",
+    "info": "",
+    "category": "",
+    "in": [],
+    "out": [],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "d0515c18.36d3e",
+    "type": "chatbot-slack-node",
+    "z": "",
+    "botname": "FrocioBot",
+    "usernames": "",
+    "username": "",
+    "iconEmoji": "",
+    "store": "ac62f3eb.6219d",
+    "log": "",
+    "debug": true
+  },
+  {
+    "id": "ac62f3eb.6219d",
+    "type": "chatbot-context-store",
+    "z": "",
+    "name": "",
+    "contextStorage": "memory",
+    "contextParams": ""
+  },
+  {
+    "id": "44d4983a.1dde18",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "",
+    "broker": "192.168.1.142",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": false,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "2210149f.afee5c",
+    "type": "ui_base",
+    "theme": {
+      "name": "theme-custom",
+      "lightTheme": {
+        "default": "#0094CE",
+        "baseColor": "#0094CE",
+        "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+        "edited": true,
+        "reset": false
+      },
+      "darkTheme": {
+        "default": "#097479",
+        "baseColor": "#097479",
+        "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+        "edited": true,
+        "reset": false
+      },
+      "customTheme": {
+        "name": "FlyPi Theme",
+        "default": "#4B7930",
+        "baseColor": "#ade0ff",
+        "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+        "reset": false
+      },
+      "themeState": {
+        "base-color": {
+          "default": "#4B7930",
+          "value": "#ade0ff",
+          "edited": true
+        },
+        "page-titlebar-backgroundColor": {
+          "value": "#6ac0f6",
+          "edited": true
+        },
+        "page-backgroundColor": {
+          "value": "#363636",
+          "edited": true
+        },
+        "page-sidebar-backgroundColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "group-textColor": {
+          "value": "#d5eefb",
+          "edited": true
+        },
+        "group-borderColor": {
+          "value": "#636363",
+          "edited": true
+        },
+        "group-backgroundColor": {
+          "value": "#636363",
+          "edited": true
+        },
+        "widget-textColor": {
+          "value": "#ffffff",
+          "edited": true
+        },
+        "widget-backgroundColor": {
+          "value": "#ade0ff",
+          "edited": false
+        },
+        "widget-borderColor": {
+          "value": "#636363",
+          "edited": true
+        },
+        "base-font": {
+          "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+        }
+      },
+      "angularTheme": {
+        "primary": "indigo",
+        "accents": "blue",
+        "warn": "red",
+        "background": "grey"
+      }
+    },
+    "site": {
+      "name": "FlyPi Ground Control",
+      "hideToolbar": "false",
+      "allowSwipe": "false",
+      "lockMenu": "false",
+      "allowTempTheme": "true",
+      "dateFormat": "DD/MM/YYYY",
+      "sizes": {
+        "sx": 48,
+        "sy": 48,
+        "gx": 6,
+        "gy": 6,
+        "cx": 6,
+        "cy": 6,
+        "px": 0,
+        "py": 0
+      }
+    }
+  },
+  {
+    "id": "61ab6e8c.b8879",
+    "type": "ui_group",
+    "z": "",
+    "name": "OFCU",
+    "tab": "48933ad4.377974",
+    "order": 1,
+    "disp": true,
+    "width": "20",
+    "collapse": false
+  },
+  {
+    "id": "48933ad4.377974",
+    "type": "ui_tab",
+    "z": "",
+    "name": "FlyPi",
+    "icon": "dashboard",
+    "disabled": false,
+    "hidden": false
+  },
+  {
+    "id": "e78ee0c7.954b7",
+    "type": "ui_group",
+    "z": "",
+    "name": "Environment",
+    "tab": "48933ad4.377974",
+    "order": 2,
+    "disp": true,
+    "width": "3",
+    "collapse": false
+  },
+  {
+    "id": "4a12e7d1.068c38",
+    "type": "ui_group",
+    "z": "",
+    "name": "Motion",
+    "tab": "48933ad4.377974",
+    "order": 4,
+    "disp": true,
+    "width": "20",
+    "collapse": false
+  },
+  {
+    "id": "6b80a453.57e6cc",
+    "type": "ui_group",
+    "z": "",
+    "name": "Thrusters",
+    "tab": "48933ad4.377974",
+    "order": 3,
+    "disp": true,
+    "width": "3",
+    "collapse": false
+  },
+  {
+    "id": "7ab97b39.a5c444",
+    "type": "ui_spacer",
+    "name": "spacer",
+    "group": "4a12e7d1.068c38",
+    "order": 11,
+    "width": "3",
+    "height": 1
+  },
+  {
+    "id": "c102318c.521ad",
+    "type": "ui_spacer",
+    "name": "spacer",
+    "group": "6b80a453.57e6cc",
+    "order": 4,
+    "width": "3",
+    "height": 1
+  },
+  {
+    "id": "b20d36df.282388",
+    "type": "ui_spacer",
+    "name": "spacer",
+    "group": "6b80a453.57e6cc",
+    "order": 3,
+    "width": "3",
+    "height": 1
+  },
+  {
+    "id": "40f36871.4150f8",
+    "type": "ui_spacer",
+    "name": "spacer",
+    "group": "6b80a453.57e6cc",
+    "order": 3,
+    "width": "3",
+    "height": 1
+  },
+  {
+    "id": "4a15efbe.b223d",
+    "type": "ui_spacer",
+    "name": "spacer",
+    "group": "4a12e7d1.068c38",
+    "order": 10,
+    "width": "3",
+    "height": 1
+  },
+  {
+    "id": "58239160.09a95",
+    "type": "ui_group",
+    "z": "",
+    "name": "Test",
+    "tab": "f3970b39.ea17c8",
+    "order": 1,
+    "disp": true,
+    "width": "24"
+  },
+  {
+    "id": "f3970b39.ea17c8",
+    "type": "ui_tab",
+    "z": "",
+    "name": "Test2",
+    "icon": "dashboard"
+  },
+  {
+    "id": "551bd537.b51bfc",
+    "type": "mongodb",
+    "z": "",
+    "hostname": "localhost",
+    "port": "27017",
+    "db": "flypi",
+    "name": ""
+  },
+  {
+    "id": "501ff33d.4d82fc",
+    "type": "http response",
+    "z": "96cfd5d1.3c58a8",
+    "name": "",
+    "x": 690,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "b9cb8ef.142b17",
+    "type": "http in",
+    "z": "96cfd5d1.3c58a8",
+    "name": "",
+    "url": "payload/tracking",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 140,
+    "y": 60,
+    "wires": [
+      [
+        "77197408.6ea19c"
+      ]
+    ]
+  },
+  {
+    "id": "ae982d7f.c2ca7",
+    "type": "mqtt in",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "topic": "/sensors/temperature",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 120,
+    "y": 40,
+    "wires": [
+      [
+        "e4bc183e.754d98"
+      ]
+    ]
+  },
+  {
+    "id": "e4bc183e.754d98",
+    "type": "json",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 40,
+    "wires": [
+      [
+        "7ac0fc62.4f1714"
+      ]
+    ]
+  },
+  {
+    "id": "7ac0fc62.4f1714",
+    "type": "function",
+    "z": "489314f8.eaa50c",
+    "name": "temperature",
+    "func": "msg.payload = msg.payload.temperature\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 470,
+    "y": 40,
+    "wires": [
+      [
+        "63a483fc.4cac7c"
+      ]
+    ]
+  },
+  {
+    "id": "63a483fc.4cac7c",
+    "type": "ui_text",
+    "z": "489314f8.eaa50c",
+    "group": "e78ee0c7.954b7",
+    "order": 1,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "Temperature",
+    "format": "{{msg.payload}} Cº",
+    "layout": "col-center",
+    "x": 630,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "ec2c2bea.a48588",
+    "type": "mqtt in",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "topic": "/sensors/humidity",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 100,
+    "wires": [
+      [
+        "22f3a15b.d3a9be"
+      ]
+    ]
+  },
+  {
+    "id": "22f3a15b.d3a9be",
+    "type": "json",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 100,
+    "wires": [
+      [
+        "e22afa5a.080418"
+      ]
+    ]
+  },
+  {
+    "id": "e22afa5a.080418",
+    "type": "function",
+    "z": "489314f8.eaa50c",
+    "name": "humidity",
+    "func": "msg.payload = msg.payload.humidity\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 460,
+    "y": 100,
+    "wires": [
+      [
+        "b280e8e5.012678"
+      ]
+    ]
+  },
+  {
+    "id": "b280e8e5.012678",
+    "type": "ui_text",
+    "z": "489314f8.eaa50c",
+    "group": "e78ee0c7.954b7",
+    "order": 2,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "Humidity",
+    "format": "{{msg.payload}}%",
+    "layout": "col-center",
+    "x": 620,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "3eb652dc.fa19de",
+    "type": "mqtt in",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "topic": "/sensors/pressure",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 160,
+    "wires": [
+      [
+        "e97586ca.9d8038"
+      ]
+    ]
+  },
+  {
+    "id": "e97586ca.9d8038",
+    "type": "json",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 160,
+    "wires": [
+      [
+        "8560eea5.c141e"
+      ]
+    ]
+  },
+  {
+    "id": "8560eea5.c141e",
+    "type": "function",
+    "z": "489314f8.eaa50c",
+    "name": "pressure",
+    "func": "msg.payload = msg.payload.pressure\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 460,
+    "y": 160,
+    "wires": [
+      [
+        "e5e17914.026d28"
+      ]
+    ]
+  },
+  {
+    "id": "e5e17914.026d28",
+    "type": "ui_text",
+    "z": "489314f8.eaa50c",
+    "group": "e78ee0c7.954b7",
+    "order": 3,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "Pressure",
+    "format": "{{msg.payload}} mbar",
+    "layout": "col-center",
+    "x": 620,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "e9458d13.9f102",
+    "type": "mqtt in",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "topic": "/sensors/pm/25",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 100,
+    "y": 220,
+    "wires": [
+      [
+        "ac1330c0.f00c1"
+      ]
+    ]
+  },
+  {
+    "id": "2518d454.53339c",
+    "type": "mqtt in",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "topic": "/sensors/pm/10",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 100,
+    "y": 280,
+    "wires": [
+      [
+        "70379228.c7f35c"
+      ]
+    ]
+  },
+  {
+    "id": "ac1330c0.f00c1",
+    "type": "json",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 220,
+    "wires": [
+      [
+        "f3c8e0f5.92b8b"
+      ]
+    ]
+  },
+  {
+    "id": "f3c8e0f5.92b8b",
+    "type": "function",
+    "z": "489314f8.eaa50c",
+    "name": "pm 25",
+    "func": "msg.payload = msg.payload.pm25\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 450,
+    "y": 220,
+    "wires": [
+      [
+        "97e35590.d97188"
+      ]
+    ]
+  },
+  {
+    "id": "97e35590.d97188",
+    "type": "ui_text",
+    "z": "489314f8.eaa50c",
+    "group": "e78ee0c7.954b7",
+    "order": 3,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "PM 2.5",
+    "format": "{{msg.payload}} ug/m3",
+    "layout": "col-center",
+    "x": 620,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "70379228.c7f35c",
+    "type": "json",
+    "z": "489314f8.eaa50c",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 280,
+    "wires": [
+      [
+        "a546aa85.7ef6e8"
+      ]
+    ]
+  },
+  {
+    "id": "a546aa85.7ef6e8",
+    "type": "function",
+    "z": "489314f8.eaa50c",
+    "name": "pm 10",
+    "func": "msg.payload = msg.payload.pm10\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 450,
+    "y": 280,
+    "wires": [
+      [
+        "24a203e4.8201ac"
+      ]
+    ]
+  },
+  {
+    "id": "24a203e4.8201ac",
+    "type": "ui_text",
+    "z": "489314f8.eaa50c",
+    "group": "e78ee0c7.954b7",
+    "order": 3,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "PM 10",
+    "format": "{{msg.payload}}  ug/m3",
+    "layout": "col-center",
+    "x": 610,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "40d78183.25f8b",
+    "type": "subflow:489314f8.eaa50c",
+    "z": "14f8b8a9.acfeb7",
+    "name": "",
+    "x": 210,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "95b96b37.2c3128",
+    "type": "mqtt in",
+    "z": "be770b5e.a11918",
+    "name": "",
+    "topic": "/actuators/thruster/lx",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 120,
+    "y": 40,
+    "wires": [
+      [
+        "a7abf81.4e61908"
+      ]
+    ]
+  },
+  {
+    "id": "be8ddd84.f6aea",
+    "type": "mqtt in",
+    "z": "be770b5e.a11918",
+    "name": "",
+    "topic": "/actuators/thruster/rx",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 120,
+    "y": 100,
+    "wires": [
+      [
+        "3d8e63f2.a5e1dc"
+      ]
+    ]
+  },
+  {
+    "id": "553b25d.c8cefdc",
+    "type": "ui_text",
+    "z": "be770b5e.a11918",
+    "group": "6b80a453.57e6cc",
+    "order": 1,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "Left",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "x": 410,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "cf0506e9.e764a8",
+    "type": "ui_text",
+    "z": "be770b5e.a11918",
+    "group": "6b80a453.57e6cc",
+    "order": 2,
+    "width": 3,
+    "height": 1,
+    "name": "",
+    "label": "Right",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "x": 410,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "a7abf81.4e61908",
+    "type": "function",
+    "z": "be770b5e.a11918",
+    "name": "on-off",
+    "func": "msg.payload = msg.payload === \"true\" ? \"ON\" : \"OFF\";\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 290,
+    "y": 40,
+    "wires": [
+      [
+        "553b25d.c8cefdc"
+      ]
+    ]
+  },
+  {
+    "id": "3d8e63f2.a5e1dc",
+    "type": "function",
+    "z": "be770b5e.a11918",
+    "name": "on-off",
+    "func": "msg.payload = msg.payload === \"true\" ? \"ON\" : \"OFF\";\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 290,
+    "y": 100,
+    "wires": [
+      [
+        "cf0506e9.e764a8"
+      ]
+    ]
+  },
+  {
+    "id": "2359e08f.a7c17",
+    "type": "subflow:be770b5e.a11918",
+    "z": "14f8b8a9.acfeb7",
+    "name": "",
+    "x": 360,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "3e32bd7f.067e92",
+    "type": "mqtt in",
+    "z": "cc9b593f.564518",
+    "name": "",
+    "topic": "/ofcu/heartbeat",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 100,
+    "y": 80,
+    "wires": [
+      [
+        "4eb45f8c.e649c",
+        "b69cd99f.459738"
+      ]
+    ]
+  },
+  {
+    "id": "b69cd99f.459738",
+    "type": "change",
+    "z": "cc9b593f.564518",
+    "name": "",
+    "rules": [
+      {
+        "t": "set",
+        "p": "heartbeat",
+        "pt": "flow",
+        "to": "0",
+        "tot": "num"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 330,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "4eb45f8c.e649c",
+    "type": "trigger",
+    "z": "cc9b593f.564518",
+    "op1": "Online",
+    "op2": "OFCU Offline",
+    "op1type": "str",
+    "op2type": "str",
+    "duration": "7",
+    "extend": true,
+    "units": "s",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 300,
+    "y": 40,
+    "wires": [
+      [
+        "243a11b9.019d3e"
+      ]
+    ]
+  },
+  {
+    "id": "243a11b9.019d3e",
+    "type": "ui_text",
+    "z": "cc9b593f.564518",
+    "group": "61ab6e8c.b8879",
+    "order": 1,
+    "width": 5,
+    "height": 1,
+    "name": "",
+    "label": "OFCU",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "x": 590,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "d5dc337e.ceb3d",
+    "type": "inject",
+    "z": "cc9b593f.564518",
+    "name": "every 1 sec",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "1",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.1,
+    "x": 310,
+    "y": 80,
+    "wires": [
+      [
+        "9d53ff1.5cf6a"
+      ]
+    ]
+  },
+  {
+    "id": "9d53ff1.5cf6a",
+    "type": "function",
+    "z": "cc9b593f.564518",
+    "name": "counter",
+    "func": "// Heartbeat counter\nlet heartbeat = Number(flow.get(\"heartbeat\")) || 0;\nheartbeat++;\n\nflow.set(\"heartbeat\", heartbeat);\nmsg.payload = heartbeat;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 460,
+    "y": 80,
+    "wires": [
+      [
+        "9ddb8a84.07f488"
+      ]
+    ]
+  },
+  {
+    "id": "9ddb8a84.07f488",
+    "type": "ui_text",
+    "z": "cc9b593f.564518",
+    "group": "61ab6e8c.b8879",
+    "order": 2,
+    "width": 5,
+    "height": 1,
+    "name": "",
+    "label": "Heartbeat",
+    "format": "{{msg.payload}} sec(s)",
+    "layout": "col-center",
+    "x": 600,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "1114970b.23bc19",
+    "type": "mqtt in",
+    "z": "cc9b593f.564518",
+    "name": "",
+    "topic": "/ofcu/temperature",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 180,
+    "wires": [
+      [
+        "6f4473c7.a70bdc"
+      ]
+    ]
+  },
+  {
+    "id": "6f4473c7.a70bdc",
+    "type": "ui_text",
+    "z": "cc9b593f.564518",
+    "group": "61ab6e8c.b8879",
+    "order": 3,
+    "width": 5,
+    "height": 1,
+    "name": "",
+    "label": "Internal temp.",
+    "format": "{{msg.payload}} Cº",
+    "layout": "col-center",
+    "x": 620,
+    "y": 180,
+    "wires": []
+  },
+  {
+    "id": "54ea6a56.2078e4",
+    "type": "ui_text",
+    "z": "cc9b593f.564518",
+    "group": "61ab6e8c.b8879",
+    "order": 4,
+    "width": 5,
+    "height": 1,
+    "name": "",
+    "label": "Core voltage",
+    "format": "{{msg.payload}} V",
+    "layout": "col-center",
+    "x": 610,
+    "y": 240,
+    "wires": []
+  },
+  {
+    "id": "7ee6c48b.129aec",
+    "type": "mqtt in",
+    "z": "cc9b593f.564518",
+    "name": "",
+    "topic": "/ofcu/voltage/core",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 240,
+    "wires": [
+      [
+        "54ea6a56.2078e4"
+      ]
+    ]
+  },
+  {
+    "id": "569f99b6.05c648",
+    "type": "subflow:cc9b593f.564518",
+    "z": "14f8b8a9.acfeb7",
+    "name": "",
+    "env": [],
+    "x": 70,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "a2d62211.a6281",
+    "type": "mqtt in",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "topic": "/sensors/acceleration",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 120,
+    "y": 60,
+    "wires": [
+      [
+        "ab94f9ed.0cc7a8"
+      ]
+    ]
+  },
+  {
+    "id": "491d29b6.bdcf08",
+    "type": "mqtt in",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "topic": "/sensors/gyroscope",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 120,
+    "wires": [
+      [
+        "6311846.43e4f7c"
+      ]
+    ]
+  },
+  {
+    "id": "cfeb4648.7084e8",
+    "type": "json",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 450,
+    "y": 120,
+    "wires": [
+      [
+        "ad48311e.548b5"
+      ]
+    ]
+  },
+  {
+    "id": "6cf3a7d4.9e2318",
+    "type": "mqtt in",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "topic": "/sensors/orientation",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 200,
+    "wires": [
+      [
+        "af14c3f5.44ed5"
+      ]
+    ]
+  },
+  {
+    "id": "3a5a3624.5233ba",
+    "type": "json",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 450,
+    "y": 200,
+    "wires": [
+      [
+        "c2e85d4d.b8b4e"
+      ]
+    ]
+  },
+  {
+    "id": "ab94f9ed.0cc7a8",
+    "type": "json",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 450,
+    "y": 60,
+    "wires": [
+      [
+        "c49dbd7e.fc3ad"
+      ]
+    ]
+  },
+  {
+    "id": "89dc3030.9b923",
+    "type": "ui_chart",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "group": "4a12e7d1.068c38",
+    "order": 12,
+    "width": 0,
+    "height": 0,
+    "label": "Gyro",
+    "chartType": "line",
+    "legend": "true",
+    "xformat": "HH:mm:ss",
+    "interpolate": "bezier",
+    "nodata": "",
+    "dot": false,
+    "ymin": "-15",
+    "ymax": "15",
+    "removeOlder": "10",
+    "removeOlderPoints": "",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "useOneColor": false,
+    "colors": [
+      "#1f77b4",
+      "#63b054",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "useOldStyle": false,
+    "outputs": 1,
+    "x": 910,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "ad48311e.548b5",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "decoupling",
+    "func": "let msg1 = {\n    topic: 'Yaw',\n    payload: msg.payload.z  \n};\n\nlet msg2 = {\n    topic: 'Pitch',\n    payload: msg.payload.y\n};\n\nlet msg3 = {\n    topic: 'Roll',\n    payload: msg.payload.x\n};\n\nreturn [msg1, msg2, msg3];",
+    "outputs": 3,
+    "noerr": 0,
+    "x": 610,
+    "y": 120,
+    "wires": [
+      [
+        "89dc3030.9b923"
+      ],
+      [
+        "89dc3030.9b923"
+      ],
+      [
+        "89dc3030.9b923"
+      ]
+    ]
+  },
+  {
+    "id": "6311846.43e4f7c",
+    "type": "delay",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "4",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "0.5",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 290,
+    "y": 120,
+    "wires": [
+      [
+        "cfeb4648.7084e8"
+      ]
+    ]
+  },
+  {
+    "id": "f47644be.29fa68",
+    "type": "mqtt in",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "topic": "/sensors/compass",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 110,
+    "y": 280,
+    "wires": [
+      [
+        "5902a757.3202b8"
+      ]
+    ]
+  },
+  {
+    "id": "5902a757.3202b8",
+    "type": "json",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 450,
+    "y": 280,
+    "wires": [
+      [
+        "9e2f8a67.184eb8"
+      ]
+    ]
+  },
+  {
+    "id": "9e2f8a67.184eb8",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "heading",
+    "func": "msg.payload = msg.payload.compass\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 600,
+    "y": 280,
+    "wires": [
+      [
+        "cb416219.0d17d"
+      ]
+    ]
+  },
+  {
+    "id": "cb416219.0d17d",
+    "type": "ui_text",
+    "z": "ba87ef2f.f3503",
+    "group": "4a12e7d1.068c38",
+    "order": 1,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Heading",
+    "format": "{{msg.payload}}º",
+    "layout": "col-center",
+    "x": 920,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "af14c3f5.44ed5",
+    "type": "delay",
+    "z": "ba87ef2f.f3503",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "4",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "0.5",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 290,
+    "y": 200,
+    "wires": [
+      [
+        "3a5a3624.5233ba"
+      ]
+    ]
+  },
+  {
+    "id": "c2e85d4d.b8b4e",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "decoupling",
+    "func": "let msg1 = {\n    topic: 'Yaw',\n    payload: msg.payload.yaw\n};\n\nlet msg2 = {\n    topic: 'Pitch',\n    payload: msg.payload.pitch\n};\n\nlet msg3 = {\n    topic: 'Roll',\n    payload: msg.payload.roll\n};\n\nreturn [msg1, msg2, msg3];",
+    "outputs": 3,
+    "noerr": 0,
+    "x": 610,
+    "y": 200,
+    "wires": [
+      [
+        "ab94ca74.f0bf78"
+      ],
+      [
+        "f48db270.db3eb"
+      ],
+      [
+        "12b7c09c.4a768f"
+      ]
+    ]
+  },
+  {
+    "id": "b915b1aa.191e",
+    "type": "ui_text",
+    "z": "ba87ef2f.f3503",
+    "group": "4a12e7d1.068c38",
+    "order": 2,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Vertical speed",
+    "format": "{{msg.payload}} m/s",
+    "layout": "col-center",
+    "x": 940,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "c49dbd7e.fc3ad",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "decoupling",
+    "func": "let msg1 = {\n    topic: 'z',\n    payload: msg.payload.z  \n};\n\nlet msg2 = {\n    topic: 'y',\n    payload: msg.payload.y\n};\n\nlet msg3 = {\n    topic: 'x',\n    payload: msg.payload.x\n};\n\nreturn [msg1, msg2, msg3];",
+    "outputs": 3,
+    "noerr": 0,
+    "x": 610,
+    "y": 60,
+    "wires": [
+      [
+        "34db7893.71b9e8"
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "id": "34db7893.71b9e8",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "v speed",
+    "func": "const g = 9.80665;\nconst z = (msg.payload - 1);\nconst vSpeed = (g * z).toFixed(2);\n\nmsg.payload = vSpeed;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 780,
+    "y": 40,
+    "wires": [
+      [
+        "b915b1aa.191e"
+      ]
+    ]
+  },
+  {
+    "id": "a482c4a9.e47008",
+    "type": "ui_text",
+    "z": "ba87ef2f.f3503",
+    "group": "4a12e7d1.068c38",
+    "order": 7,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Yaw",
+    "format": "{{msg.payload}}º",
+    "layout": "col-center",
+    "x": 910,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "f6a450ce.04a59",
+    "type": "ui_text",
+    "z": "ba87ef2f.f3503",
+    "group": "4a12e7d1.068c38",
+    "order": 8,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Pitch",
+    "format": "{{msg.payload}}º",
+    "layout": "col-center",
+    "x": 910,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "677ef86b.490b48",
+    "type": "ui_text",
+    "z": "ba87ef2f.f3503",
+    "group": "4a12e7d1.068c38",
+    "order": 9,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Roll",
+    "format": "{{msg.payload}}º",
+    "layout": "col-center",
+    "x": 910,
+    "y": 240,
+    "wires": []
+  },
+  {
+    "id": "ab94ca74.f0bf78",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "yaw",
+    "func": "msg.payload = msg.payload.toFixed(2);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 790,
+    "y": 160,
+    "wires": [
+      [
+        "a482c4a9.e47008"
+      ]
+    ]
+  },
+  {
+    "id": "f48db270.db3eb",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "pitch",
+    "func": "msg.payload = msg.payload.toFixed(2);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 790,
+    "y": 200,
+    "wires": [
+      [
+        "f6a450ce.04a59"
+      ]
+    ]
+  },
+  {
+    "id": "12b7c09c.4a768f",
+    "type": "function",
+    "z": "ba87ef2f.f3503",
+    "name": "roll",
+    "func": "msg.payload = msg.payload.toFixed(2);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 790,
+    "y": 240,
+    "wires": [
+      [
+        "677ef86b.490b48"
+      ]
+    ]
+  },
+  {
+    "id": "59d11f56.7229c",
+    "type": "subflow:ba87ef2f.f3503",
+    "z": "14f8b8a9.acfeb7",
+    "name": "",
+    "x": 70,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "7c6a8045.0b75a",
+    "type": "mongodb in",
+    "z": "96cfd5d1.3c58a8",
+    "mongodb": "551bd537.b51bfc",
+    "name": "",
+    "collection": "tracker",
+    "operation": "find",
+    "x": 500,
+    "y": 60,
+    "wires": [
+      [
+        "501ff33d.4d82fc"
+      ]
+    ]
+  },
+  {
+    "id": "77197408.6ea19c",
+    "type": "function",
+    "z": "96cfd5d1.3c58a8",
+    "name": "find",
+    "func": "msg.payload = {};\nmsg.projection = {\n    lat: 1,\n    lon: 1,\n    time: 1\n};\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 310,
+    "y": 60,
+    "wires": [
+      [
+        "7c6a8045.0b75a"
+      ]
+    ]
+  },
+  {
+    "id": "e445c21.8945d4",
+    "type": "mqtt in",
+    "z": "f78c0daf.a712e",
+    "name": "",
+    "topic": "/sensors/gps/tpv",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 100,
+    "y": 60,
+    "wires": [
+      [
+        "480cd760.4eb988"
+      ]
+    ]
+  },
+  {
+    "id": "480cd760.4eb988",
+    "type": "json",
+    "z": "f78c0daf.a712e",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 60,
+    "wires": [
+      [
+        "82e133c4.13468",
+        "99e30c60.af786",
+        "1148b3e4.147dac",
+        "f0a14402.167538"
+      ]
+    ]
+  },
+  {
+    "id": "2b26c6db.b1b65a",
+    "type": "ui_text",
+    "z": "f78c0daf.a712e",
+    "group": "4a12e7d1.068c38",
+    "order": 3,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Lat",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "x": 830,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "82e133c4.13468",
+    "type": "function",
+    "z": "f78c0daf.a712e",
+    "name": "lat",
+    "func": "msg.payload = msg.payload.lat.toFixed(2);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 690,
+    "y": 40,
+    "wires": [
+      [
+        "2b26c6db.b1b65a"
+      ]
+    ]
+  },
+  {
+    "id": "99e30c60.af786",
+    "type": "function",
+    "z": "f78c0daf.a712e",
+    "name": "lon",
+    "func": "msg.payload = msg.payload.lon.toFixed(2);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 690,
+    "y": 80,
+    "wires": [
+      [
+        "79392cc4.fd0454"
+      ]
+    ]
+  },
+  {
+    "id": "79392cc4.fd0454",
+    "type": "ui_text",
+    "z": "f78c0daf.a712e",
+    "group": "4a12e7d1.068c38",
+    "order": 4,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Lon",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "x": 830,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "1148b3e4.147dac",
+    "type": "function",
+    "z": "f78c0daf.a712e",
+    "name": "alt",
+    "func": "msg.payload = msg.payload.alt.toFixed(2);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 690,
+    "y": 120,
+    "wires": [
+      [
+        "5b788666.b6e268"
+      ]
+    ]
+  },
+  {
+    "id": "5b788666.b6e268",
+    "type": "ui_text",
+    "z": "f78c0daf.a712e",
+    "group": "4a12e7d1.068c38",
+    "order": 5,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Altitude",
+    "format": "{{msg.payload}} m",
+    "layout": "col-center",
+    "x": 840,
+    "y": 120,
+    "wires": []
+  },
+  {
+    "id": "f0a14402.167538",
+    "type": "delay",
+    "z": "f78c0daf.a712e",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "4",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "30",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 480,
+    "y": 140,
+    "wires": [
+      [
+        "68ebf2b1.ee7ffc",
+        "237f4654.a78eea"
+      ]
+    ]
+  },
+  {
+    "id": "68ebf2b1.ee7ffc",
+    "type": "mongodb out",
+    "z": "f78c0daf.a712e",
+    "mongodb": "551bd537.b51bfc",
+    "name": "",
+    "collection": "tracker",
+    "payonly": true,
+    "upsert": false,
+    "multi": false,
+    "operation": "insert",
+    "x": 760,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "2ade9965.fde936",
+    "type": "mqtt in",
+    "z": "f78c0daf.a712e",
+    "name": "",
+    "topic": "/sensors/gps/sky",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "44d4983a.1dde18",
+    "x": 100,
+    "y": 260,
+    "wires": [
+      [
+        "32143ee1.10d402"
+      ]
+    ]
+  },
+  {
+    "id": "32143ee1.10d402",
+    "type": "json",
+    "z": "f78c0daf.a712e",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 260,
+    "wires": [
+      [
+        "714140d3.a6953"
+      ]
+    ]
+  },
+  {
+    "id": "714140d3.a6953",
+    "type": "function",
+    "z": "f78c0daf.a712e",
+    "name": "alt",
+    "func": "msg.payload = msg.payload.satellites.length;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 690,
+    "y": 260,
+    "wires": [
+      [
+        "b42589ef.2d8748"
+      ]
+    ]
+  },
+  {
+    "id": "b42589ef.2d8748",
+    "type": "ui_text",
+    "z": "f78c0daf.a712e",
+    "group": "4a12e7d1.068c38",
+    "order": 6,
+    "width": "3",
+    "height": 1,
+    "name": "",
+    "label": "Sats",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "x": 830,
+    "y": 260,
+    "wires": []
+  },
+  {
+    "id": "68381af6.f6c2a4",
+    "type": "ui_template",
+    "z": "f78c0daf.a712e",
+    "group": "58239160.09a95",
+    "name": "",
+    "order": 0,
+    "width": 0,
+    "height": 0,
+    "format": "<link rel=\"stylesheet\" href=\"https://openlayers.org/en/v4.6.5/css/ol.css\" type=\"text/css\">\n<script src=\"https://openlayers.org/en/v4.6.5/build/ol.js\" type=\"text/javascript\"></script>\n<script>\n\n    (function(scope) {\n        scope.$watch('msg.payload', function(data) {\n            console.log('testa', data);\n        });\n    })(scope);\n    \n  </script>\n<div>merda</div>\n",
+    "storeOutMessages": true,
+    "fwdInMessages": true,
+    "resendOnRefresh": true,
+    "templateScope": "local",
+    "x": 840,
+    "y": 160,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "237f4654.a78eea",
+    "type": "http request",
+    "z": "f78c0daf.a712e",
+    "name": "tracking",
+    "method": "GET",
+    "ret": "obj",
+    "paytoqs": false,
+    "url": "http://localhost:1880/payload/tracking",
+    "tls": "",
+    "persist": false,
+    "proxy": "",
+    "authType": "",
+    "x": 700,
+    "y": 160,
+    "wires": [
+      [
+        "68381af6.f6c2a4"
+      ]
+    ]
+  }
+]

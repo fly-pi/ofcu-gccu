@@ -1,0 +1,17 @@
+{
+  "name": "gccu",
+  "version": "1.0.0",
+  "description": "Grount Control Computer Unit (GCCU)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gccu": "node-red src/node-red/gccu-flow.json"
+  },
+  "author": "FlyPi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-red": "^1.1.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.6"
+  }
+}
