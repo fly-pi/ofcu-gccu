@@ -1,0 +1,16 @@
+{
+  "name": "ofcu",
+  "version": "1.0.0",
+  "description": "Onboard Flight Computer Unit (OFCU)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FlyPi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-red": "^1.1.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.6"
+  }
+}
